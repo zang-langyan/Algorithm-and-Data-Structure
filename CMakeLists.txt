@@ -13,10 +13,12 @@ add_subdirectory(${PROJECT_DIR}/C++ ${OUTPUT_DIR}/C++)
 add_subdirectory(${PROJECT_DIR}/Python ${OUTPUT_DIR}/Python)
 
 #[[ Fortran ]]
+add_subdirectory(${PROJECT_DIR}/Fortran ${OUTPUT_DIR}/Fortran)
 
 #[[ Lua ]]
 add_subdirectory(${PROJECT_DIR}/Lua ${OUTPUT_DIR}/Lua)
 
 #[[ Go ]]
+add_subdirectory(${PROJECT_DIR}/Go ${OUTPUT_DIR}/Go)
 
 #[[ Rust ]]
