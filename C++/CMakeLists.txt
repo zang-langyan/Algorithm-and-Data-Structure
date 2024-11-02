@@ -145,3 +145,14 @@ GenCpp(
   EXE_NAME prim 
   SOURCE_LIST ${PRIM_SOURCE} 
 )
+
+# --------------------------------
+# Computational Geometry
+# --------------------------------
+#[[ Convex Hull ]]
+set(CONVEX_SOURCE ${CPP_PROJECT_DIR}/Computational_Geometry/Convex.cpp)
+GenCpp(
+  EXE_NAME Convex 
+  SOURCE_LIST ${CONVEX_SOURCE} 
+)
+
