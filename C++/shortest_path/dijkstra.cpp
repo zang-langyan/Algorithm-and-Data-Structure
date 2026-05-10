@@ -78,12 +78,13 @@ vector<int> dijkstra(int root, const vector<vector<int>>& g){
     // next vertex
     int cur = INT_MAX, cur_i = -1;
     for (int i = 0; i < n; i++){
-      if (!vis[i] && g[v][i]){
+      if (vis[i]) continue;
+      if (g[v][i]){
         l[i] = min(l[i], l[v]+g[v][i]);
-        if (cur > l[i]){
-          cur = l[i];
-          cur_i = i;
-        }
+      }
+      if (cur > l[i]){
+        cur = l[i];
+        cur_i = i;
       }
     }
     if (cur_i != -1){
