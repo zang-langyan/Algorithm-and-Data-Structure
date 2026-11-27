@@ -74,7 +74,7 @@ public:
         }
     }
 
-    template<unsigned QMask>
+    template<unsigned QMask=OpMask>
     Node query(int l, int r) const {
         static_assert((QMask & ~OpMask) == 0,
                       "QMask must be a subset of OpMask");
